@@ -11,8 +11,11 @@
       </p>
       <script>
         function random() {
-          var rand = Math.floor( Math.random() * 10001 );
-          document.getElementById('random').innerHTML = rand; 
+          function randomNam() {
+            var r = Math.floor( Math.random() * 10001 );
+          }
+          const rand = randomNam();
+          document.getElementById('random').textContent = rand; 
         }
       </script>
     </center>
