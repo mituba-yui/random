@@ -1,0 +1,19 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>random</title>
+  </head>
+  <body>
+    <center>
+      <span id=random>null</span>
+      <a onclick="random()">random</a>
+      <script>
+        function random() {
+          var random = Math.floor( Math.random() * 100000000001 );
+        }
+        const random = random();
+        document.getElementById('random').textContent = random; 
+      </script>
+    </center>
+  </body>
+</html>
