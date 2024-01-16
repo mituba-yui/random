@@ -12,14 +12,12 @@
         </p>
       </form>
       <script>
-        function random() {
-          function randomNam() {
-            var r = Math.floor( Math.random() * 10001 );
+        <script type="text/javascript">
+          function random() {
+            var num = Math.floor( Math.random() * 10 + 1 ) ; //乱数の取得
+            document.getElementById("ransuu").innerHTML = num; //乱数の出力
           }
-          const rand = randomNam();
-          document.getElementById('random').textContent = rand; 
-        }
-      </script>
+</script>
     </center>
   </body>
 </html>
