@@ -5,11 +5,13 @@
   </head>
   <body>
     <center>
-      <p> random <span id=random>null</span><br>
-      <a onclick="random()">random</a></p>
+      <p>
+        <span id=random>null</span><br>
+        <a onclick="random()">random</a>
+      </p>
       <script>
         function random() {
-          var random = Math.floor( Math.random() * 11 );
+          return Math.floor( Math.random() * 11 );
         }
         const rand = random();
         document.getElementById('random').textContent = rand; 
