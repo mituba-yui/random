@@ -5,14 +5,14 @@
   </head>
   <body>
     <center>
-      <span id=random>null</span>
+      <span id=random>null</span><br>
       <a onclick="random()">random</a>
       <script>
         function random() {
           var random = Math.floor( Math.random() * 100000000001 );
         }
-        const random = random();
-        document.getElementById('random').textContent = random; 
+        const rand = random();
+        document.getElementById('random').textContent = rand; 
       </script>
     </center>
   </body>
