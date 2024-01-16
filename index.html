@@ -6,12 +6,11 @@
   <body>
     <center>
       <p>
-        <span id=random>null</span><br>
-        <a onclick="random()">random</a>
+        <span id=random>null</span>
       </p>
       <script>
         function random() {
-          var r = Math.floor( Math.random() * 11 );
+          return = Math.floor( Math.random() * 100000001 );
         }
         const rand = random();
         document.getElementById('random').textContent = rand; 
