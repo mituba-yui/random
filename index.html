@@ -6,12 +6,12 @@
   <body>
     <center>
       <form>
-        <input type="button" value="乱数の取得" onClick="random()">
-        <span id="ransuu">表示場所</span>
+        <a onClick="random()">random</a>
+        <span id="ransuu">null</span>
       </form>
       <script type="text/javascript">
         function random() {
-          var num = Math.floor( Math.random() * 10 + 1 ) ; //乱数の取得
+          var num = Math.floor( Math.random() * 100000000001) ; //乱数の取得
           document.getElementById("ransuu").innerHTML = num; //乱数の出力
         }
       </script>
